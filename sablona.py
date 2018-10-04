@@ -2,7 +2,6 @@
 import string
 
 class InvoiceTemplate(string.Template):
-    delimiter = "!!"
     pattern = r"""
         \#\#\#(?:
             (?P<named>[_a-z][_a-z0-9]*)  | # Unbraced identifiers
